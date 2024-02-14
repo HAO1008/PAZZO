@@ -1,6 +1,7 @@
 import { defineComponent, ref } from 'vue';
 import { ElCollapse, ElCollapseItem } from 'element-plus';
 import { useModal } from '@/stores/useModal.ts';
+import { ISizeGuide, IFittingReport, IModelReference } from '@/interfaces';
 export default defineComponent({
     components: {
         ElCollapse,
@@ -16,11 +17,10 @@ export default defineComponent({
             default: false
         }
     },
-    // 腰圍 臀圍 前褲檔 後褲檔 大腿寬 褲長 褲口寬 褲口高岔高度 重量g
     setup({isAccordion, allOpen}) {
         const modal = useModal();
         const activeTable = ref<string[]>(allOpen ? ['1','2','3'] : []);
-        const table1 = ref([
+        const table1 = ref<ISizeGuide[]>([
             {
                 id:1, 
                 size: 'S-',
@@ -113,7 +113,7 @@ export default defineComponent({
                 weight: 490,
             },
         ]);
-        const table2 = ref([
+        const table2 = ref<IFittingReport[]>([
             {
                 id:1, 
                 name: '羊',
@@ -175,7 +175,7 @@ export default defineComponent({
                 recommended: 'M',
             },
         ]);
-        const table3 = ref([
+        const table3 = ref<IModelReference[]>([
             {
                 id: 1,
                 height: 176,

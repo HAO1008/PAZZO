@@ -57,6 +57,8 @@
   padding: 60px 0px;
   .footer_menu_list {
     @include flex-set(flex, row, center, flex-start);
+    margin: 0;
+    padding: 0;
     margin-bottom: 47px;
     li {
       margin-left: 15px;

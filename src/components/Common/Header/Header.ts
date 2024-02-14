@@ -1,6 +1,7 @@
 import { defineComponent, ref, onMounted, computed } from 'vue';
 import { useProduct } from '@/stores/useProduct.ts';
 import { useRouter } from 'vue-router';
+import { IList, IProductList, Iicon } from '@/interfaces';
 import emitter from '@/bus';
 import logo from '@/assets/logo.svg';
 import search from '@/assets/icons/search.svg';
@@ -16,14 +17,14 @@ export default defineComponent({
     setup(props) {
         const { productList } = useProduct();
         const router = useRouter();
-        const list = ref([
+        const list = ref<IList[]>([
             {id: 1, title: '所有商品', enTitle: 'SHOP ALL', isActive: false},
             {id: 2, title: '最新商品', enTitle: 'NEW ARRIVAL', isActive: false},
             {id: 3, title: '熱賣商品', enTitle: 'RESTOCK', isActive: false},
             {id: 4, title: '發熱系列', enTitle: 'HEAT', isActive: false},
             {id: 5, title: '美圖瘦瘦褲', enTitle: '#BKPANTS', isActive: false},
         ]);
-        const secnav = ref([
+        const secnav = ref<Iicon[]>([
             {id: 1, name: 'search', img: search},    
             {id: 2, name: 'user', img: user},    
             {id: 3, name: 'bag', img: bag},
@@ -35,12 +36,12 @@ export default defineComponent({
         const closeShow = ref<boolean>(false);
         const handleCartCount = computed(() => {
             let count = 0;
-            productList.forEach((e: any) => {
+            productList.forEach((e: IProductList) => {
                 count = e.count + count;
             });
             return count;
         })
-        function changeListStats(status: boolean, item: any) {
+        function changeListStats(status: boolean, item: IList) {
             item.isActive = status;
             
             if (item.id == 1) {

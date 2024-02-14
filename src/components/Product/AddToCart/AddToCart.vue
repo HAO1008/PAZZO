@@ -4,7 +4,7 @@
       <img width="25" src="@/assets/icons/close.svg" alt="close" />
     </div>
     <div class="cart-item">
-      <img width="215" height="315" :src="product.list[currentColor - 1][0]" alt="" />
+      <img class="cart-item-image" width="215" height="315" :src="product.list[currentColor - 1][0]" alt="" />
       <div class="cart-item-info">
         <div class="product-title">{{ product.name }}</div>
         <div class="product-price">NT$ {{ product.price }}</div>
@@ -149,6 +149,20 @@
           background-color: $beige;
           border-color: $beige;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .add-to-cart {
+    .cart-item {
+      padding: 10px 20px;
+      .cart-item-image {
+        display: none;
+      }
+      .cart-item-info {
+        margin-left: 0;
       }
     }
   }
