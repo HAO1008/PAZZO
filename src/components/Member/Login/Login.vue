@@ -11,7 +11,7 @@
     </div>
 </template>
 
-<script src="./Login.ts"></script>
+<script lang="ts" src="./Login.ts"></script>
 
 <style lang="scss" scoped>
 .login {

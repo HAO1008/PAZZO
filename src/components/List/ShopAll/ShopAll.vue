@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<script src="./ShopAll.ts"></script>
+<script lang="ts" src="./ShopAll.ts"></script>
 
 <style lang="scss" scoped>
 .modal {

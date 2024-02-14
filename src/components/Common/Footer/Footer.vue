@@ -48,7 +48,7 @@
   </div>
 </template>
 
-<script src="./Footer.ts"></script>
+<script lang="ts" src="./Footer.ts"></script>
 
 <style lang="scss" scoped>
 .footer__menu {

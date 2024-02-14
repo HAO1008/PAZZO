@@ -45,7 +45,7 @@
   </div>
 </template>
 
-<script src="./Recommend.ts"></script>
+<script lang="ts" src="./Recommend.ts"></script>
 
 <style lang="scss" scoped>
 img {

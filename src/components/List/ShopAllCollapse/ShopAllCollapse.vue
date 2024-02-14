@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<script src="./ShopAllCollapse.ts"></script>
+<script lang="ts" src="./ShopAllCollapse.ts"></script>
 
 <style lang="scss" scoped>
 .shop-all-collapse {

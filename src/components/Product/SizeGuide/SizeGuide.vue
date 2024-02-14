@@ -167,7 +167,7 @@
   </div>
 </template>
 
-<script src="./SizeGuide.ts"></script>
+<script lang="ts" src="./SizeGuide.ts"></script>
 
 <style lang="scss" scoped>
 .modal-content {

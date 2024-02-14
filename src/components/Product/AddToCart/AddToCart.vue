@@ -64,7 +64,7 @@
   </div>
 </template>
 
-<script src="./AddToCart.ts"></script>
+<script lang="ts" src="./AddToCart.ts"></script>
 
 <style lang="scss" scoped>
 .active {

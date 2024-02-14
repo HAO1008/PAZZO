@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script src="./SearchBar.ts"></script>
+<script lang="ts" src="./SearchBar.ts"></script>
 
 <style lang="scss" scoped>
 .search-bar {

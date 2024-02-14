@@ -14,7 +14,7 @@
   </remind>
 </template>
 
-<script src="./SizeRemind.ts"></script>
+<script lang="ts" src="./SizeRemind.ts"></script>
 
 <style lang="scss" scoped>
 .check-btn {

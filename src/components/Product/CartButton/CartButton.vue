@@ -2,7 +2,7 @@
   <div v-if="!modal.isOpen" class="cart-btn" @click="openModal">加入購物車</div>
 </template>
 
-<script src="./CartButton.ts"></script>
+<script lang="ts" src="./CartButton.ts"></script>
 
 <style lang="scss" scoped>
 .cart-btn {

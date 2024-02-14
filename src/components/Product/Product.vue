@@ -31,7 +31,7 @@
   </div>
 </template>
 
-<script src="./Product.ts"></script>
+<script lang="ts" src="./Product.ts"></script>
 
 <style lang="scss" scoped>
 :deep(.el-image-viewer__mask) {

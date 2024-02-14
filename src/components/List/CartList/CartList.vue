@@ -28,7 +28,7 @@
   </div>
 </template>
 
-<script src="./CartList.ts"></script>
+<script lang="ts" src="./CartList.ts"></script>
 
 <style lang="scss" scoped>
 .cart-list {

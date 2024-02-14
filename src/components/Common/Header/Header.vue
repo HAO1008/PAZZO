@@ -66,7 +66,7 @@
   </div>
 </template>
 
-<script src="./Header.ts"></script>
+<script lang="ts" src="./Header.ts"></script>
 
 <style lang="scss" scoped>
 .header-inner {

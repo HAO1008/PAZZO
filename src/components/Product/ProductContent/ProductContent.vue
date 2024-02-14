@@ -83,7 +83,7 @@
   </div>
 </template>
 
-<script src="./ProductContent.ts"></script>
+<script lang="ts" src="./ProductContent.ts"></script>
 
 <style lang="scss" scoped>
 .gap {
