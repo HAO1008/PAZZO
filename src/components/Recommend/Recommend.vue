@@ -67,7 +67,7 @@ img {
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 1)
     );
-    z-index: 999;
+    z-index: 2;
   }
 }
 .recommend_title {
