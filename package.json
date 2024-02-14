@@ -11,6 +11,8 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.7.1",
+    "@egjs/vue3-flicking": "^4.11.2",
     "element-plus": "^2.5.5",
     "mitt": "^3.0.1",
     "pinia": "^2.1.7",

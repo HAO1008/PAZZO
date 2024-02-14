@@ -1,6 +1,6 @@
 <template>
   <div class="recommend">
-    <!-- <div class="recommend_title text-xs">#365dayswithpazzo</div>
+    <div class="recommend_title text-xs">#365dayswithpazzo</div>
     <Flicking :options="options" :plugins="pluginA">
       <img
         v-for="item in recommonList1"
@@ -41,7 +41,7 @@
           </span>
         </div>
       </template>
-    </Flicking> -->
+    </Flicking>
   </div>
 </template>
 
@@ -51,6 +51,24 @@
 img {
   margin: 0 10px;
   width: 350px;
+}
+
+:deep(.flicking-viewport) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
+    z-index: 999;
+  }
 }
 .recommend_title {
   letter-spacing: 1px;
@@ -105,6 +123,5 @@ img {
   img {
     width: 198px;
   }
-
 }
 </style>

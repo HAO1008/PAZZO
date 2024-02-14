@@ -61,7 +61,7 @@
     padding: 0;
     margin-bottom: 47px;
     li {
-      margin-left: 15px;
+      margin-left: 25px;
     }
     .list {
       .menu {
