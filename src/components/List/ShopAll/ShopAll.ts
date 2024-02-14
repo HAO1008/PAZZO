@@ -1,4 +1,5 @@
 import { defineComponent, ref } from 'vue';
+import { IShopList } from '@/interfaces';
 export default defineComponent({
     components: {
     },
@@ -6,7 +7,7 @@ export default defineComponent({
 
     },
     setup(props) {
-        const list = ref([
+        const list = ref<IShopList[]>([
             {id: 1, name: '品牌主打', list: [
                 {id:1, name:'本周新品'},
                 {id:2, name:'2024人氣必買清單'},

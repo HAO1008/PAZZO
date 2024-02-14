@@ -16,6 +16,14 @@ export interface IList {
     list?: IFooterList[];
 }
 
+export interface IShopList {
+    id: number;
+    name: string;
+    discount?: boolean;
+    hot?: boolean;
+    list?: IShopList[];
+}
+
 export interface IFooterList {
     title: string;
     href: string;
@@ -62,6 +70,7 @@ export interface IModelReference {
     height: number;
     weight: number;
     shoulderWidth: number;
+    bust: number;
     waist: number;
     hips: number;
     size: string;

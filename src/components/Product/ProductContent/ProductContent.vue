@@ -42,15 +42,15 @@
       <span class="calculate" @click="handelCount(1)">+</span>
     </div>
     <div
-      v-if="currentColor != '' && currentSize != ''"
+      v-if="currentSize != ''"
       class="product-check gap"
     >
       <div class="check-btn bg-white dark" @click="openRemind('CartRemind', productCount)">立即結帳</div>
       <div class="check-btn bg-dark white" @click="openRemind('CartRemind', productCount)">加入購物車</div>
     </div>
     <div v-else class="product-check gap">
-      <div class="check-btn change-check-btn bg-white dark" @click="openRemind('SizeRemind')">請選擇尺寸</div>
-      <div class="check-btn bg-dark white" @click="openRemind('SizeRemind')">請選擇尺寸</div>
+      <div class="check-btn change-check-btn bg-white dark" @click="openRemind('SizeRemind', null)">請選擇尺寸</div>
+      <div class="check-btn bg-dark white" @click="openRemind('SizeRemind', null)">請選擇尺寸</div>
     </div>
     <div class="product-info gap">
       <ul class="product-info-title">

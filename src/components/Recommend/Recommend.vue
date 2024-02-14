@@ -6,7 +6,6 @@
         v-for="item in recommonList1"
         :key="item.id"
         :src="item.img"
-        :alt="item.id"
       />
       <template #viewport>
         <div class="control_panel">

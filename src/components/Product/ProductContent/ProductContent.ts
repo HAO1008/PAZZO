@@ -54,7 +54,7 @@ export default defineComponent({
         function checkWindowSize() {
             isCanClick.value = window.innerWidth >= 1024;
         }
-        function openRemind(com: string, type: number) {
+        function openRemind(com: string, type: number | null) {
             let productList: IProductList = {
                 id: currentColor.value + currentSize.value + product.name,
                 name: product.name,

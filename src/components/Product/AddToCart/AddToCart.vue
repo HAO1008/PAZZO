@@ -19,7 +19,7 @@
               }"
               @click="changeColor(item)"
             >
-              <img width="23" :src="colorType(item).img" :alt="item" />
+              <img width="23" :src="colorType(item).img" />
             </div>
           </div>
           <p class="text-xs">{{ colorType(currentColor).color }}</p>
@@ -44,7 +44,7 @@
           }}</span>
           <span class="calculate" @click="handelCount(1)">+</span>
         </div>
-        <div class="product-check" v-if="currentColor != '' && currentSize != ''">
+        <div class="product-check" v-if="currentSize != ''">
           <div
             class="check-btn bg-dark-gray white"
             @click="addToCart()"

@@ -1,5 +1,6 @@
 import { defineComponent, ref } from 'vue';
 import { ElCollapse, ElCollapseItem } from 'element-plus';
+import { IShopList } from '@/interfaces';
 export default defineComponent({
     components: {
         ElCollapse,
@@ -9,7 +10,7 @@ export default defineComponent({
 
     },
     setup(props) {
-        const list = ref([
+        const list = ref<IShopList[]>([
             {id: 1, name: '品牌主打', list: [
                 {id:1, name:'本周新品'},
                 {id:2, name:'2024人氣必買清單'},
