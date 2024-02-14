@@ -1,0 +1,103 @@
+$white: #ffffff;
+$orange: #FF813A;
+$light-orange: #ff823a79;
+$gray: #dedede;
+$black: #000000;
+$red: #EE5757;
+$green: #78CA67;
+$light-green: #EDE9D8;
+$blue: #74B7F4;
+$beige: #EDE9D8;
+$gold: #FFD700;
+$mask: #00000025;
+$light-gray: #e0e0e0;
+$dark-gray: #5D5D5D;
+$pink: #A1B7CE;
+$dark: #323232;
+.text-xs {
+    font-size: 12px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 16px;
+}
+
+.text-lg {
+    font-size: 18px;
+}
+
+.text-max {
+    font-size: 20px;
+}
+
+.font-thin {
+    font-weight: 300;
+}
+
+.font-md {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.white {
+    color: $white;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.black {
+    color: $black;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.pink {
+    color: $pink;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+.red {
+    color: $red;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.dark {
+    color: $dark;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.gray {
+    color: $gray;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.dark-gray {
+    color: $dark-gray;
+}
+
+.bg-dark-gray {
+    background-color: $dark-gray;
+}
