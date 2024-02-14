@@ -20,5 +20,8 @@ export default defineConfig({
       }
     }
   },
-  base: './'
+  base: './',
+  build: {
+    inlineStylesheets: 'never'
+  }
 })
