@@ -179,7 +179,11 @@
   .left-header {
     width: 100%;
     .main-menu {
-      justify-content: flex-start;
+      margin-left: -10px;
+      margin-right: 10px;
+      li {
+        width: auto !important;
+      }
     }
     .header__nav {
       width: 100%;

@@ -174,7 +174,7 @@
   border-top: 1px solid $gray;
   .product-info-title {
     @include flex-set(flex, row, center, space-between);
-    margin: 20px auto;
+    padding: 0;
     .typeActive {
       font-weight: 700;
       border-bottom: 1.5px solid $black;
@@ -187,7 +187,7 @@
     }
   }
   .product-info-content {
-    padding: 20px auto;
+    padding: 0;
     li {
       margin: 10px auto;
     }
@@ -200,8 +200,17 @@
   .product-check {
     display: none;
   }
+  .product-title {
+    @include flex-set(flex, column, flex-start, flex-start);
+    font-size: 20px;
+  }
   :deep(.modal-content) {
     margin: 20px 0 !important;
+  }
+}
+@media screen and (max-width: 675px) {
+  .rwd-product-info-content {
+    margin-left: -15px !important;
   }
 }
 </style>

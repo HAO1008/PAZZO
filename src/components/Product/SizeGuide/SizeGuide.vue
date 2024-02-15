@@ -229,4 +229,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 675px) {
+  .etc {
+    img {
+      width: 156px !important;
+    }
+  }
+}
 </style>
