@@ -58,6 +58,10 @@ export default defineComponent({
                 cartOpen.value = false;
             }
             if (id == 3) {
+                if (closeShow.value) {
+                    router.push({name: 'Login'});
+                    return;
+                }
                 cartOpen.value = status;
             }
             if (id == 4) {
