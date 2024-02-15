@@ -20,7 +20,7 @@ npm run dev
 * Vite：快速的前端開發工具，用於構建、打包和熱重載。
 * TypeScript：靜態類型檢查器，使代碼更穩健易於維護。
 # 使用套件
-Vue Router：用於管理應用程序路由的 Vue 插件。
+* Vue Router：用於管理應用程序路由的 Vue 插件。
 * Pinia：Vue 狀態管理庫，用於管理應用程序的全局狀態。
 * mitt：簡單的 JavaScript 發布/訂閱庫，用於事件管理。
 * Element Plus：一個基於 Vue 3 的 UI 組件庫。
