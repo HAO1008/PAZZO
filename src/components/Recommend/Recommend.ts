@@ -38,6 +38,7 @@ export default defineComponent({
             {id:4, img: Recommend4},
             {id:5, img: Recommend5},
             {id:6, img: Recommend5},
+            {id:7, img: Recommend5},
         ]);
 
         const recommonList2 = ref([

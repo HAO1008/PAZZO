@@ -56,12 +56,12 @@
   width: 100%;
   padding: 60px 0px;
   .footer_menu_list {
-    @include flex-set(flex, row, center, flex-start);
+    @include flex-set(flex, row, center, space-evenly);
     margin: 0;
     padding: 0;
     margin-bottom: 47px;
     li {
-      margin-left: 25px;
+       flex-basis: auto;
     }
     .list {
       .menu {

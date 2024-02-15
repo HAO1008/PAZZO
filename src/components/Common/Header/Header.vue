@@ -109,7 +109,6 @@
 }
 .right-header {
   @include flex-set(flex, row, center, flex-start);
-  width: 150px;
   margin-right: 25px;
   .isShow {
     display: none;
